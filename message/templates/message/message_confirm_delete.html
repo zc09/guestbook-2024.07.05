@@ -1,0 +1,10 @@
+{ % extends 'base.html' % }
+
+{ % block content % }
+<h1>刪除留言</h1>
+確定要刪除{{ message }},這則留言?
+<form action=""method="post">
+    { %csrf_token % }
+    <input type="submit" action="" value="是的，我要刪除" />
+</form>
+    {% endblock %}
